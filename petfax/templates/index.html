@@ -10,6 +10,10 @@
     {% for pet in pets %}
         <h2>{{ pet.pet_name }}</h2>
         <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
+        <a href="/pets/{{pet.pet_id}}"> Learn more</a>
     {% endfor %}
+    <div>
+        We'd love to learn more facts about pets. <a href="/facts/new"> Submit a new pet listing here.</a>
+    </div>
 </body>
 </html>
